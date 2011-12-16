@@ -1,0 +1,18 @@
+____________________________________README_____________________________________
+find_str_rank finds the lexicographically first and last ranked words in a 
+series entered by the user and prints these. The prompt is repeated until the
+user enters a word of four letters in length. Three array data structures are 
+used, one to represent the current last word at any given time, one to represent
+the current first word, and one to temporarily store the latest word to be 
+fetched before its rank can be determined. At the first iteration, the word
+entered by the user will be both the first and last ranked word. After that 
+there will be divergence. Words have a maximum length of 20 characters, defined
+by a macro, and while the user's input exceeds this length, he/she is prompted 
+to reenter. The C Library functions strcpy(), strcmp() and strlen() are used to
+copy strings into max_word and min_word, compare strings lexicogrphically and 
+determine whether a string of four letters has been entered by the user, 
+respectively. The function read_str() reads user input into the character array
+usr_str for temporary storage. It accepts a character string parameter and an
+integer, representing the maximum length of the word. read_str() reads a word
+one character at a time into the passed character array using the getchar()
+function.
